@@ -2,7 +2,7 @@ module Api
   module V1
     class TeamMateController < ApplicationController
       def index
-        if !params[:count] == ''
+        if params[:count] != ''
           mates = TeamMateFacade.team_mates(params[:count])
 
           render json: TeamMateSerializer.new(mates)
