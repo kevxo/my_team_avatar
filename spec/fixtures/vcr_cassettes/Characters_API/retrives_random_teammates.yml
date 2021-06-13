@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://last-airbender-api.herokuapp.com/api/v1/characters/random?count=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1509'
+      Etag:
+      - W/"5e5-/P3MBPA4eMHJCWFyATZe7x3kKb0"
+      Date:
+      - Sun, 13 Jun 2021 15:40:20 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"_id":"5cf5679a915ecad153ab695a","allies":["Mako"],"enemies":[],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/5/52/Hasook.png/revision/latest?cb=20120325134051","name":"Hasook","gender":"Male","hair":"Black","weapon":"Water","profession":"Pro-bender","position":"Fire
+        Ferrets'' waterbender ","affiliation":"Fire Ferrets ","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6a6f","allies":["Southern
+        Water Tribe"],"enemies":["Dark spirits"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/2/2a/Tonraq.png/revision/latest?cb=20140730104245","name":"Tonraq","gender":"Male","eye":"Steel
+        blue","hair":"Dark brown ","skin":"Brown","love":"Senna","weapon":"Water,
+        spear, machete","profession":"Warrior","position":" Chief of the Southern
+        Water Tribe General of the Northern Water Tribe military (formerly) Heir to
+        the Water Tribe Chiefdom (disinherited) Leader of the Southern Water Tribe
+        rebels (disbanded) Water Tribe fugitive (formerly) Waterbending master","predecessor":"Unalaq
+        ","affiliation":" Council of Chieftains Northern Water Tribe (formerly) Southern
+        Water Tribe Southern Water Tribe rebels (disbanded)","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab69e0","allies":["Wolf
+        spirit"],"enemies":["Team Avatar"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/3/33/Mother_of_Faces.png/revision/latest?cb=20131109203311","name":"Mother
+        of Faces","gender":"Female","position":"Ancient Spirit","affiliation":"Spirit
+        World","first":"The Search Part Two","__v":0}]'
+  recorded_at: Sun, 13 Jun 2021 15:40:20 GMT
+recorded_with: VCR 6.0.0

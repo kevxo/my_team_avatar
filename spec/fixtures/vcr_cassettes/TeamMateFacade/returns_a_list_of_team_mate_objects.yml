@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://last-airbender-api.herokuapp.com/api/v1/characters/random?count=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1438'
+      Etag:
+      - W/"59e-QfIpbaAnuU69xPk2d4FJwUvczbU"
+      Date:
+      - Sun, 13 Jun 2021 16:57:19 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"_id":"5cf5679a915ecad153ab6942","allies":["Varrick"],"enemies":[],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/8/85/Ginger.png/revision/latest?cb=20130914063027","name":"Ginger","gender":"Female","hair":"Red
+        ","profession":"Actress","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6915","allies":["Amon"],"enemies":["Bolin"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/b/b7/Doorman.png/revision/latest?cb=20121107121352","name":"Doorman","gender":"Male","hair":"Brown","profession":"Doorman","position":"Equalist","affiliation":"Equalists
+        ","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6a3f","allies":["Avatar"],"enemies":["Fire
+        Sages "],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/c/c9/Shyu.png/revision/latest?cb=20130622211349","name":"Shyu","gender":"Male","hair":"White
+        (brown in youth)","weapon":"Fire","profession":"Fire Sage","position":"Great
+        Sage","affiliation":"Fire Sages","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab69a9","allies":["Southern
+        Water Tribe",""],"enemies":["Dark spirits"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/7/77/Kya_%28waterbender%29.png/revision/latest?cb=20151102093816","name":"Kya","gender":"Female","eye":"Light
+        blue","hair":"Brown ","skin":"Brown","weapon":"Water","profession":"Meditation
+        instructor","position":" Master healer Waterbending master","affiliation":"Southern
+        Water Tribe","first":"\"","__v":0}]'
+  recorded_at: Sun, 13 Jun 2021 16:57:19 GMT
+recorded_with: VCR 6.0.0

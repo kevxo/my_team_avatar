@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://last-airbender-api.herokuapp.com/api/v1/characters/random?count=8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3137'
+      Etag:
+      - W/"c41-50ZIGvNFFnAhr5Ts3vX3ta5mKxU"
+      Date:
+      - Sun, 13 Jun 2021 16:41:11 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"_id":"5cf5679a915ecad153ab6a65","allies":["Ying"],"enemies":["Fire
+        Nation"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/1/16/Than%27s_sister.png/revision/latest?cb=20140413234453","name":"Than''s
+        sister","gender":"Female","hair":"Brown","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6ab3","allies":["Ozai"],"enemies":["Aang"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/e/e1/Commander_Zhao.png/revision/latest?cb=20140103180854","name":"Zhao","gender":"Male","eye":"Amber","hair":"Gray
+        ","skin":"Light","weapon":"Fire","profession":"Military official","position":"
+        Firebending master[2] High Admiral[3] (formerly) Prisoner in the Fog of Lost
+        Souls[4]","affiliation":"Fire Nation Navy","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab69a2","allies":["Earth
+        Kingdom",""],"enemies":["Fire Nation"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/5/5e/Kuei.png/revision/latest?cb=20130627084042","name":"Kuei","gender":"Male","eye":"Light
+        green","hair":"Black","position":"Earth King","predecessor":"The 51st Earth
+        King","affiliation":" Earth Kingdom government Earth Kingdom Royal Family","first":"
+        \"City of Walls and Secrets\" (actual) \"The Earth King\" (speaking role)","__v":0},{"_id":"5cf5679a915ecad153ab6933","allies":["Aang"],"enemies":["Fire
+        Nation"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/1/12/Foaming_mouth_guy.png/revision/latest?cb=20140215111856","name":"Foaming
+        mouth guy","gender":"Male","hair":"Brown","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab69a9","allies":["Southern
+        Water Tribe",""],"enemies":["Dark spirits"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/7/77/Kya_%28waterbender%29.png/revision/latest?cb=20151102093816","name":"Kya","gender":"Female","eye":"Light
+        blue","hair":"Brown ","skin":"Brown","weapon":"Water","profession":"Meditation
+        instructor","position":" Master healer Waterbending master","affiliation":"Southern
+        Water Tribe","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6a82","allies":["Jinzuk
+        and Rina"],"enemies":["Azulon"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/a/a6/Ursa.png/revision/latest?cb=20140331143655","name":"Ursa","gender":"Female","eye":"Gold","hair":"Dark
+        brown","skin":"Light","love":" Noren (husband) Ozai (husband; separated)","profession":"
+        Herbalist Theater actress (formerly)","position":" Former Fire Nation traitor
+        (amnestied by Fire Lord Zuko) Princess of the Fire Nation (formerly)","affiliation":"
+        Fire Nation Fire Nation Royal Family Hira''a Acting Troupe (formerly)","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab68d8","allies":["Katara"],"enemies":[],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/9/9a/Ashuna.png/revision/latest?cb=20161026183558","name":"Ashuna","gender":"Female","first":"North
+        and South Part One","__v":0},{"_id":"5cf5679a915ecad153ab6a63","allies":["His
+        mother",""],"enemies":["Fire Nation"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/7/77/Teo.png/revision/latest?cb=20140118125457","name":"Teo","gender":"Male","hair":"Black","affiliation":"Earth
+        Kingdom","first":"\"","__v":0}]'
+  recorded_at: Sun, 13 Jun 2021 16:41:11 GMT
+recorded_with: VCR 6.0.0
