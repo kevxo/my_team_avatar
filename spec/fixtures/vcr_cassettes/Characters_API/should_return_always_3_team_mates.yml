@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://last-airbender-api.herokuapp.com/api/v1/characters/random?count=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3606'
+      Etag:
+      - W/"e16-kF5EEiS9S9YCQTwfkMIr1DAb90k"
+      Date:
+      - Sun, 13 Jun 2021 16:25:54 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"_id":"5cf5679a915ecad153ab6963","allies":["Azula"],"enemies":[],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/9/9e/High_Sage.png/revision/latest?cb=20130623212716","name":"High
+        Sage","gender":"Male","hair":"White","weapon":"Fire","profession":"Fire Sage","position":"High
+        Sage","affiliation":" Fire Nation Fire Sages","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6933","allies":["Aang"],"enemies":["Fire
+        Nation"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/1/12/Foaming_mouth_guy.png/revision/latest?cb=20140215111856","name":"Foaming
+        mouth guy","gender":"Male","hair":"Brown","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6a5c","allies":["Her
+        pirate followers"],"enemies":["Yun",""],"name":"Tagaka","gender":"Female","weapon":"Water,
+        jian sword","profession":"Pirate, slaver","position":"Pirate queen","first":"The
+        Rise of Kyoshi","__v":0},{"_id":"5cf5679a915ecad153ab6ab2","allies":["Zhang"],"enemies":["Gan
+        Jin "],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/e/ef/Zhang_leader.png/revision/latest?cb=20130311211244","name":"Zhang
+        leader","gender":"Female","hair":"Brown","weapon":"Sword","position":"Tribe
+        leader","affiliation":" Zhang Gan Jin","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6a16","allies":[],"enemies":["Yakone"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/d/d5/Prosecution_attorney.png/revision/latest?cb=20140623164414","name":"Prosecution
+        attorney","gender":"Female","hair":"Brown","profession":"Lawyer","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6a35","allies":["Aang"],"enemies":["Mayor
+        "],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/1/1e/Sensitive_ruffian.png/revision/latest?cb=20140215112603","name":"Sensitive
+        ruffian","gender":"Male","hair":"White ","position":"Prisoner","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab69ac","allies":["Koko","Yun",""],"enemies":["Tagaka"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/0/07/Avatar_Kyoshi.png/revision/latest?cb=20140215111846","name":"Kyoshi","gender":"Female","hair":"Brown","love":"Koko''s
+        father ","weapon":"The elements","profession":" Avatar Earthbending instructor","position":"
+        Founder of the Kyoshi Warriors and Dai Li Fully Realized Avatar Governor of
+        Kyoshi Island (formerly)[3]","predecessor":"Kuruk","affiliation":"Kyoshi Island
+        inhabitants","first":" \"The Southern Air Temple\"(statue and painting) \"The
+        Avatar State\"(vision)","__v":0},{"_id":"5cf5679a915ecad153ab6907","allies":["Circus
+        master"],"enemies":["Appa"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/b/bd/Circus_trainer.png/revision/latest?cb=20130705125545","name":"Circus
+        trainer","gender":"Male","hair":"Black","weapon":"Fire","profession":"Animal","affiliation":"Fire
+        Nation circus","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6a3d","allies":["Oma",""],"enemies":[],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/3/33/Oma_and_Shu.png/revision/latest?cb=20140128110438","name":"Shu","gender":"Male","hair":"Black","love":"Oma","weapon":"Earth","position":"First
+        male human earthbender","affiliation":"Omashu","first":"\"","__v":0},{"_id":"5cf5679a915ecad153ab6941","allies":["Hakoda"],"enemies":["Team
+        Avatar"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/c/cd/Gilak.png/revision/latest?cb=20170524065046","name":"Gilak","gender":"Male","eye":"Blue","hair":"Grey","skin":"Brown","weapon":"Water
+        Tribe weapons","profession":"Warrior","position":"Leader of the Southern nationalists","affiliation":"Southern
+        Water Tribe","first":"North and South Part One","__v":0}]'
+  recorded_at: Sun, 13 Jun 2021 16:25:54 GMT
+recorded_with: VCR 6.0.0
