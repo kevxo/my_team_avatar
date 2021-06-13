@@ -42,4 +42,16 @@ describe 'Characters API' do
     expect(team_mates.length).to_not eq(10)
     expect(team_mates.length).to eq(3)
   end
+
+  it 'should send an error message if count parameter is not passed', :vcr do
+    get '/api/v1/team_mates?count='
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+
+    json = JSON.parse(response.body, symbolize_names: true)
+
+    expect(json).to have_key :error
+    expect(json[:error]).to eq('Missing Parameter')
+  end
 end
