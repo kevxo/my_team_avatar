@@ -5,6 +5,12 @@ class AvatarService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.avatar(avatar_id)
+    response = conn.get("/api/v1/characters/#{avatar_id}")
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new(url: 'https://last-airbender-api.herokuapp.com')
   end

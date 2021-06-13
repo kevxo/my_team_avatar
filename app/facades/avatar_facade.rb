@@ -6,4 +6,10 @@ class AvatarFacade
       Avatar.new(avatar_data)
     end
   end
+
+  def self.avatar(avatar_id)
+    data = AvatarService.avatar(avatar_id)
+
+    Avatar.new(data)
+  end
 end
