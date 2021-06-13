@@ -77,4 +77,48 @@ http_interactions:
         predecessor","gender":"Male","hair":"Brown","weapon":"The elements","profession":"Avatar","position":"Fully
         Realized Avatar","predecessor":"Unnamed male earth ","first":"\""}]'
   recorded_at: Sun, 13 Jun 2021 01:24:11 GMT
+- request:
+    method: get
+    uri: https://last-airbender-api.herokuapp.com/api/v1/characters/5cf5679a915ecad153ab68c9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '587'
+      Etag:
+      - W/"24b-jkUMWwS8JMimeIMd3N3MfVHIYQM"
+      Date:
+      - Sun, 13 Jun 2021 01:24:12 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"allies":["Appa"],"enemies":["Azula"],"_id":"5cf5679a915ecad153ab68c9","photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/a/ae/Aang_at_Jasmine_Dragon.png/revision/latest?cb=20130612174003","name":"Aang","gender":"Male","eye":"Gray","hair":"Dark
+        brown ","skin":"Light","love":"Katara ","weapon":"The elements","profession":"
+        Air Nomad culture teacher Airbending instructor Avatar Monk","position":"
+        Co-founder of the United Republic of Nations Fully Realized Avatar","predecessor":"Roku","affiliation":"
+        Air Acolytes Air Nomads Air Scouts (formerly) Team Avatar","first":"\""}'
+  recorded_at: Sun, 13 Jun 2021 01:24:12 GMT
 recorded_with: VCR 6.0.0
