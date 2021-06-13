@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/avatars', to: 'avatar#index'
       get '/avatars/:avatar_id', to: 'avatar#show'
+
+      get '/team_mates', to: 'team_mate#index'
     end
   end
 end
