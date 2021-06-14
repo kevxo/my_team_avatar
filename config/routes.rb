@@ -7,6 +7,8 @@ Rails.application.routes.draw do
       get '/avatars/:avatar_id', to: 'avatar#show'
 
       get '/team_mates', to: 'team_mate#index'
+
+      post '/users', to: 'user#create'
     end
   end
 end
