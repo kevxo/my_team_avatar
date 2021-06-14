@@ -11,6 +11,8 @@ Rails.application.routes.draw do
       post '/users', to: 'user#create'
 
       post '/sessions', to: 'session#create'
+
+      post '/avatar_team', to: 'avatar_team#create'
     end
   end
 end
