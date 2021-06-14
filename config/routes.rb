@@ -9,6 +9,8 @@ Rails.application.routes.draw do
       get '/team_mates', to: 'team_mate#index'
 
       post '/users', to: 'user#create'
+
+      post '/sessions', to: 'session#create'
     end
   end
 end
