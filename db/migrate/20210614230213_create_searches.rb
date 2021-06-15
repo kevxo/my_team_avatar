@@ -4,7 +4,7 @@ class CreateSearches < ActiveRecord::Migration[6.1]
       t.string :request
       t.string :action
       t.string :params
-      t.json :payload
+      t.jsonb :payload, null: false, default: '{}'
 
       t.timestamps
     end

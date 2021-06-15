@@ -19,9 +19,10 @@ ActiveRecord::Schema.define(version: 2021_06_14_231810) do
     t.string "request"
     t.string "action"
     t.string "params"
-    t.json "payload"
+    t.jsonb "payload", default: "{}", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["payload"], name: "index_searches_on_payload", using: :gin
     t.index ["request", "action", "params"], name: "index_searches_on_request_and_action_and_params", unique: true
   end
 
