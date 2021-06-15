@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_06_14_231810) do
     t.json "payload"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["request", "action"], name: "index_searches_on_request_and_action", unique: true
+    t.index ["request", "action", "params"], name: "index_searches_on_request_and_action_and_params", unique: true
   end
 
   create_table "users", force: :cascade do |t|
