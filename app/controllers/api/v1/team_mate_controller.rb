@@ -2,6 +2,9 @@ module Api
   module V1
     class TeamMateController < ApplicationController
       def index
+        search = Search.new(request: params[:controller], action: params[:action], params: "count=#{params[:count]}")
+        search.save
+
         if params[:count] != ''
           mates = TeamMateFacade.team_mates(params[:count])
 

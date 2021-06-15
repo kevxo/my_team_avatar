@@ -2,6 +2,8 @@ module Api
   module V1
     class UserController < ApplicationController
       def create
+        search = Search.new(request: params[:controller], action: params[:action], payload: payload.to_json)
+        search.save
         user = User.new(user_params)
 
         if user.save
@@ -12,6 +14,14 @@ module Api
       end
 
       private
+
+      def payload
+        {
+          'email' => params[:email],
+          'password' => params[:password],
+          'password_confirmation' => params[:password_confirmation]
+        }
+      end
 
       def user_params
         params.permit(:email, :password, :password_confirmation, :api_key)
