@@ -54,4 +54,29 @@ describe 'Characters API' do
     expect(json).to have_key :error
     expect(json[:error]).to eq('Missing Parameter')
   end
+
+  it 'should return error message when count is less than 1', :vcr do
+    count = -1
+    get "/api/v1/team_mates?count=#{count}"
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+
+    json = JSON.parse(response.body, symbolize_names: true)
+
+    expect(json).to have_key :error
+    expect(json[:error]).to eq('Missing Parameter')
+  end
+
+  it 'should return error message when count is nil', :vcr do
+    get '/api/v1/team_mates'
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+
+    json = JSON.parse(response.body, symbolize_names: true)
+
+    expect(json).to have_key :error
+    expect(json[:error]).to eq('Missing Parameter')
+  end
 end
