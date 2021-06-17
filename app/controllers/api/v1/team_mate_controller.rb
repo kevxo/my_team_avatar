@@ -5,7 +5,7 @@ module Api
         search = Search.new(request: params[:controller], action: params[:action], params: "count=#{params[:count]}")
         search.save
 
-        if params[:count] != ''
+        if params[:count] != '' && params[:count].to_i.positive?
           mates = TeamMateFacade.team_mates(params[:count])
 
           render json: TeamMateSerializer.new(mates)
